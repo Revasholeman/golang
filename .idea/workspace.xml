@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/spamMasker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/spamMasker_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,55 +17,55 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Revasholeman"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Revasholeman&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Revasholeman/golang.git",
-    "accountId": "e7074b6a-31b6-4613-a5b1-7d8b91fdbd22"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Revasholeman/golang.git&quot;,
+    &quot;accountId&quot;: &quot;e7074b6a-31b6-4613-a5b1-7d8b91fdbd22&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2jSR0wgZhcNEMcZGiV8yPUa0xIQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Go Build.go build golang.executor": "Run",
-    "Go Test.TestSpamMasker in golang.executor": "Coverage",
-    "Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor": "Run",
-    "Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
-    "Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor": "Run",
-    "Go Test.TestSpamMasker_ in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.go test golang.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/home",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Go Build.go build golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker in golang.executor&quot;: &quot;Coverage&quot;,
+    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_ in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.go test golang.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/home&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Build.go build golang">
     <configuration name="go build golang" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang" />
