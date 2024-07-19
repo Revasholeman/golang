@@ -21,7 +21,7 @@ func TestSpamMasker(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(fmt.Sprintf("%s", tt.input), func(t *testing.T) {
 			if got := spamMasker(tt.input); got != tt.expected {
-				t.Errorf("spamMasker(%s) = %s ; want %s", tt.input, got, tt.expected)
+				t.Errorf("%s - spamMasker(%s) = %s ; want %s", tt.name, tt.input, got, tt.expected)
 			}
 		})
 	}
