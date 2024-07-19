@@ -4,25 +4,25 @@ import (
 	"fmt"
 )
 
-func spamMasker(str string) string {
-	http := [7]string{"h", "t", "t", "p", ":", "/", "/"}
+func spamMasker(message string) string {
+	http := [7]rune{'h', 't', 't', 'p', ':', '/', '/'}
 	count := 0
-	buffer := make([]byte, 0)
-	for _, w := range str {
+	result := make([]rune, 0)
+	for _, w := range message {
 		switch {
-		case string(w) == " ":
-			buffer = append(buffer, byte(w))
+		case w == ' ':
+			result = append(result, w)
 			count = 0
-		case count == 7 && string(w) != " ":
-			buffer = append(buffer, byte('*'))
-		case string(w) == http[count]:
-			buffer = append(buffer, byte(w))
+		case count == 7 && w != ' ':
+			result = append(result, '*')
+		case w == http[count]:
+			result = append(result, w)
 			count++
 		default:
-			buffer = append(buffer, byte(w))
+			result = append(result, w)
 		}
 	}
-	return string(buffer)
+	return string(result)
 }
 
 func main() {
