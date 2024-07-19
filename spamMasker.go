@@ -7,7 +7,7 @@ import (
 func spamMasker(str string) string {
 	http := [7]string{"h", "t", "t", "p", ":", "/", "/"}
 	count := 0
-	var buffer []byte
+	buffer := make([]byte, len(str))
 	for _, w := range str {
 		switch {
 		case string(w) == " ":
