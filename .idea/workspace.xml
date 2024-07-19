@@ -4,26 +4,57 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="048ecc93-0aa7-48d8-8ea6-3ff649bc5561" name="Changes" comment="" />
+    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spamMasker.go" beforeDir="false" afterPath="$PROJECT_DIR$/spamMasker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spamMasker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/spamMasker_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="2jR7SNswOYG6BwGegJot7eSEsDC" />
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Revasholeman"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Revasholeman/golang.git",
+    "accountId": "e7074b6a-31b6-4613-a5b1-7d8b91fdbd22"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2jSR0wgZhcNEMcZGiV8yPUa0xIQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Go Test.TestSpamMasker in golang.executor": "Coverage",
+    "Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor": "Run",
+    "Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor": "Run",
+    "Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
+    "Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor": "Run",
+    "Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor": "Run",
+    "Go Test.TestSpamMasker_ in golang.executor": "Run",
+    "Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor": "Run",
+    "Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
+    "Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor": "Run",
+    "Go Test.go test golang.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -31,12 +62,78 @@
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/Lenovo",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/home",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RunManager" selected="Go Test.TestSpamMasker in golang">
+    <configuration name="TestSpamMasker in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSpamMasker\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSpamMasker/1_http:/hehe123.HAHA_1 in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSpamMasker\E$/^\Q1_http:\E$/^\Qhehe123.HAHA_1\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSpamMasker/http:/hehe.HAHA in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSpamMasker\E$/^\Qhttp:\E$/^\Qhehe.HAHA\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSpamMasker/http:/hehe.HAHA_123 in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestSpamMasker\E$/^\Qhttp:\E$/^\Qhehe.HAHA_123\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestSpamMasker in golang" />
+        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA in golang" />
+        <item itemvalue="Go Test.go test golang" />
+        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang" />
+        <item itemvalue="Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -51,5 +148,8 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/golang$TestSpamMasker_in_golang.out" NAME="TestSpamMasker in golang Coverage Results" MODIFIED="1721384812713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
