@@ -7,14 +7,15 @@ import (
 
 func TestSpamMasker(t *testing.T) {
 	tests := []struct {
+		name     string
 		input    string
 		expected string
 	}{
-		{"http://hehe.HAHA", "http://*********"},
-		{"123 http://hehe.HAHA", "123 http://*********"},
-		{"http://hehe.HAHA 123", "http://********* 123"},
-		{"123 http://hehe.HAHA 123", "123 http://********* 123"},
-		{"1 http://hehe123.HAHA 1", "1 http://************ 1"},
+		{"test: 1", "http://hehe.HAHA", "http://*********"},
+		{"test: 2", "123 http://hehe.HAHA", "123 http://*********"},
+		{"test: 3", "http://hehe.HAHA 123", "http://********* 123"},
+		{"test: 4", "123 http://hehe.HAHA 123", "123 http://********* 123"},
+		{"test: 5", "1 http://hehe123.HAHA 1", "1 http://************ 1"},
 	}
 
 	for _, tt := range tests {

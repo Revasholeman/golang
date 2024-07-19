@@ -1,29 +1,28 @@
 package main
 
 import (
-	"bytes"
 	"fmt"
 )
 
 func spamMasker(str string) string {
 	http := [7]string{"h", "t", "t", "p", ":", "/", "/"}
 	count := 0
-	var buffer bytes.Buffer
+	var buffer []byte // тест коммита
 	for _, w := range str {
 		switch {
 		case string(w) == " ":
-			buffer.WriteByte(byte(w))
+			buffer = append(buffer, byte(w))
 			count = 0
 		case count == 7 && string(w) != " ":
-			buffer.WriteByte('*')
+			buffer = append(buffer, '*')
 		case string(w) == http[count]:
-			buffer.WriteByte(byte(w))
+			buffer = append(buffer, byte(w))
 			count++
 		default:
-			buffer.WriteByte(byte(w))
+			buffer = append(buffer, byte(w))
 		}
 	}
-	return buffer.String()
+	return string(buffer)
 }
 
 func main() {
