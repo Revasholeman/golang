@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service/presenter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/presenter_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/producer.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/producer_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spamMasker.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spamMasker_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/presenter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/presenter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/presenter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/producer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/producer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +81,13 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\GolandProjects\golang\app" />
+      <recent name="C:\Users\Lenovo\GolandProjects\golang" />
+      <recent name="C:\Users\Lenovo\GolandProjects\golang\internal" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build golang">
     <configuration name="go build golang" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang" />
