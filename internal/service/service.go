@@ -40,7 +40,7 @@ func (s *Service) Run() error {
 func (s *Service) SpamMasker(message string) string {
 	http := [7]rune{'h', 't', 't', 'p', ':', '/', '/'}
 	count := 0
-	result := make([]rune, 0)
+	result := make([]rune, 0, len(message))
 	for _, w := range message {
 		switch {
 		case w == ' ':

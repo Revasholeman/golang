@@ -19,12 +19,12 @@ func (producer *Producer) produce() ([]string, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer func(file *os.File) {
+	defer func() {
 		err := file.Close()
 		if err != nil {
 			fmt.Println(err)
 		}
-	}(file)
+	}()
 
 	var text []string
 

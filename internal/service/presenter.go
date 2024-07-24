@@ -18,12 +18,12 @@ func (p *Presenter) present(text []string) error {
 	if err != nil {
 		return err
 	}
-	defer func(file *os.File) {
+	defer func() {
 		err := file.Close()
 		if err != nil {
 			fmt.Println(err)
 		}
-	}(file)
+	}()
 
 	for _, line := range text {
 		_, err := file.WriteString(line + "\n")
