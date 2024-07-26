@@ -1,7 +1,9 @@
 package main
 
 import (
-	service2 "golang/internal/service"
+	presenter "golang/internal/presenter"
+	producer "golang/internal/producer"
+	service "golang/internal/service"
 	"os"
 )
 
@@ -15,10 +17,10 @@ func main() {
 		outputFile = args[1]
 	}
 
-	prod := service2.NewProducer(inputFile)
-	pres := service2.NewPresenter(outputFile)
+	prod := producer.NewProducer(inputFile)
+	pres := presenter.NewPresenter(outputFile)
 
-	serv := service2.NewService(prod, pres)
+	serv := service.NewService(prod, pres)
 
 	err := serv.Run()
 	if err != nil {

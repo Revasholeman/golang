@@ -1,11 +1,11 @@
 package service
 
 type producer interface {
-	produce() ([]string, error)
+	Produce() ([]string, error)
 }
 
 type presenter interface {
-	present([]string) error
+	Present([]string) error
 }
 
 type Service struct {
@@ -18,7 +18,7 @@ func NewService(prod producer, pres presenter) *Service {
 }
 
 func (s *Service) Run() error {
-	file, err := s.prod.produce()
+	file, err := s.prod.Produce()
 	if err != nil {
 		return err
 	}
@@ -29,7 +29,7 @@ func (s *Service) Run() error {
 		spamMasked = append(spamMasked, s.SpamMasker(text))
 	}
 
-	err = s.pres.present(spamMasked)
+	err = s.pres.Present(spamMasked)
 	if err != nil {
 		return err
 	}

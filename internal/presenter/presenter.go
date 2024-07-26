@@ -1,4 +1,4 @@
-package service
+package presenter
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ func NewPresenter(filePath string) *Presenter {
 	return &Presenter{filePath}
 }
 
-func (p *Presenter) present(text []string) error {
+func (p *Presenter) Present(text []string) error {
 	file, err := os.Create(p.filePath)
 	if err != nil {
 		return err

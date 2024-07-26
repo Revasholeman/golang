@@ -1,4 +1,4 @@
-package service
+package producer
 
 import (
 	"bufio"
@@ -14,7 +14,7 @@ func NewProducer(filePath string) *Producer {
 	return &Producer{filePath: filePath}
 }
 
-func (producer *Producer) produce() ([]string, error) {
+func (producer *Producer) Produce() ([]string, error) {
 	file, err := os.Open(producer.filePath)
 	if err != nil {
 		return nil, err
