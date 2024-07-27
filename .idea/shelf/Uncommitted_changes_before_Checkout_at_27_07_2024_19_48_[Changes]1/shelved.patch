@@ -1,0 +1,249 @@
+Index: internal/presenter/presenter_test.go
+===================================================================
+diff --git a/internal/presenter/presenter_test.go b/internal/presenter/presenter_test.go
+deleted file mode 100644
+--- a/internal/presenter/presenter_test.go	
++++ /dev/null	
+@@ -1,53 +0,0 @@
+-package presenter
+-
+-import (
+-	"reflect"
+-	"testing"
+-)
+-
+-func TestNewPresenter(t *testing.T) {
+-	type args struct {
+-		filePath string
+-	}
+-	tests := []struct {
+-		name string
+-		args args
+-		want *Presenter
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			if got := NewPresenter(tt.args.filePath); !reflect.DeepEqual(got, tt.want) {
+-				t.Errorf("NewPresenter() = %v, want %v", got, tt.want)
+-			}
+-		})
+-	}
+-}
+-
+-func TestPresenter_present(t *testing.T) {
+-	type fields struct {
+-		filePath string
+-	}
+-	type args struct {
+-		text []string
+-	}
+-	tests := []struct {
+-		name    string
+-		fields  fields
+-		args    args
+-		wantErr bool
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			p := &Presenter{
+-				filePath: tt.fields.filePath,
+-			}
+-			if err := p.present(tt.args.text); (err != nil) != tt.wantErr {
+-				t.Errorf("Presenter.present() error = %v, wantErr %v", err, tt.wantErr)
+-			}
+-		})
+-	}
+-}
+Index: internal/producer/producer_test.go
+===================================================================
+diff --git a/internal/producer/producer_test.go b/internal/producer/producer_test.go
+deleted file mode 100644
+--- a/internal/producer/producer_test.go	
++++ /dev/null	
+@@ -1,55 +0,0 @@
+-package producer
+-
+-import (
+-	"reflect"
+-	"testing"
+-)
+-
+-func TestNewProducer(t *testing.T) {
+-	type args struct {
+-		filePath string
+-	}
+-	tests := []struct {
+-		name string
+-		args args
+-		want *Producer
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			if got := NewProducer(tt.args.filePath); !reflect.DeepEqual(got, tt.want) {
+-				t.Errorf("NewProducer() = %v, want %v", got, tt.want)
+-			}
+-		})
+-	}
+-}
+-
+-func TestProducer_produce(t *testing.T) {
+-	type fields struct {
+-		filePath string
+-	}
+-	tests := []struct {
+-		name    string
+-		fields  fields
+-		want    []string
+-		wantErr bool
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			producer := &Producer{
+-				filePath: tt.fields.filePath,
+-			}
+-			got, err := producer.produce()
+-			if (err != nil) != tt.wantErr {
+-				t.Errorf("Producer.produce() error = %v, wantErr %v", err, tt.wantErr)
+-				return
+-			}
+-			if !reflect.DeepEqual(got, tt.want) {
+-				t.Errorf("Producer.produce() = %v, want %v", got, tt.want)
+-			}
+-		})
+-	}
+-}
+Index: internal/service/service_test.go
+===================================================================
+diff --git a/internal/service/service_test.go b/internal/service/service_test.go
+deleted file mode 100644
+--- a/internal/service/service_test.go	
++++ /dev/null	
+@@ -1,81 +0,0 @@
+-package service
+-
+-import (
+-	"reflect"
+-	"testing"
+-)
+-
+-func TestNewService(t *testing.T) {
+-	type args struct {
+-		prod producer
+-		pres presenter
+-	}
+-	tests := []struct {
+-		name string
+-		args args
+-		want *Service
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			if got := NewService(tt.args.prod, tt.args.pres); !reflect.DeepEqual(got, tt.want) {
+-				t.Errorf("NewService() = %v, want %v", got, tt.want)
+-			}
+-		})
+-	}
+-}
+-
+-func TestService_Run(t *testing.T) {
+-	type fields struct {
+-		prod producer
+-		pres presenter
+-	}
+-	tests := []struct {
+-		name    string
+-		fields  fields
+-		wantErr bool
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			s := &Service{
+-				prod: tt.fields.prod,
+-				pres: tt.fields.pres,
+-			}
+-			if err := s.Run(); (err != nil) != tt.wantErr {
+-				t.Errorf("Service.Run() error = %v, wantErr %v", err, tt.wantErr)
+-			}
+-		})
+-	}
+-}
+-
+-func TestService_SpamMasker(t *testing.T) {
+-	type fields struct {
+-		prod producer
+-		pres presenter
+-	}
+-	type args struct {
+-		message string
+-	}
+-	tests := []struct {
+-		name   string
+-		fields fields
+-		args   args
+-		want   string
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			s := &Service{
+-				prod: tt.fields.prod,
+-				pres: tt.fields.pres,
+-			}
+-			if got := s.SpamMasker(tt.args.message); got != tt.want {
+-				t.Errorf("Service.SpamMasker() = %v, want %v", got, tt.want)
+-			}
+-		})
+-	}
+-}
+Index: app/main_test.go
+===================================================================
+diff --git a/app/main_test.go b/app/main_test.go
+deleted file mode 100644
+--- a/app/main_test.go	
++++ /dev/null	
+@@ -1,16 +0,0 @@
+-package main
+-
+-import "testing"
+-
+-func Test_main(t *testing.T) {
+-	tests := []struct {
+-		name string
+-	}{
+-		// TODO: Add test cases.
+-	}
+-	for _, tt := range tests {
+-		t.Run(tt.name, func(t *testing.T) {
+-			main()
+-		})
+-	}
+-}
+Index: go.mod
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>module golang\r\n\r\ngo 1.21.4\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/go.mod b/go.mod
+--- a/go.mod	
++++ b/go.mod	
+@@ -1,3 +1,5 @@
+ module golang
+ 
+ go 1.21.4
++
++require github.com/golang/mock v1.6.0

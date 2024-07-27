@@ -14,7 +14,15 @@ func TestNewProducer(t *testing.T) {
 		args args
 		want *Producer
 	}{
-		// TODO: Add test cases.
+		{
+			name: "TestNewProducer",
+			args: args{
+				filePath: "output.txt",
+			},
+			want: &Producer{
+				filePath: "output.txt",
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -25,7 +33,7 @@ func TestNewProducer(t *testing.T) {
 	}
 }
 
-func TestProducer_produce(t *testing.T) {
+func TestProducer_Produce(t *testing.T) {
 	type fields struct {
 		filePath string
 	}
@@ -35,20 +43,27 @@ func TestProducer_produce(t *testing.T) {
 		want    []string
 		wantErr bool
 	}{
-		// TODO: Add test cases.
+		{
+			name: "TestProducer_Produce",
+			fields: fields{
+				filePath: "input.txt",
+			},
+			want:    []string{"http://www.baidu.com"},
+			wantErr: false,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			producer := &Producer{
 				filePath: tt.fields.filePath,
 			}
-			got, err := producer.produce()
+			got, err := producer.Produce()
 			if (err != nil) != tt.wantErr {
-				t.Errorf("Producer.produce() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("Produce() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("Producer.produce() = %v, want %v", got, tt.want)
+				t.Errorf("Produce() got = %v, want %v", got, tt.want)
 			}
 		})
 	}
