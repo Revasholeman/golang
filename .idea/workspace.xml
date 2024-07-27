@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="" />
+    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/presenter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/producer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +43,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2jSR0wgZhcNEMcZGiV8yPUa0xIQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +69,7 @@
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#3 on dev&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/home&quot;,
@@ -66,6 +78,15 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\home\GolandProjects\golang\internal\producer" />
+      <recent name="C:\Users\home\GolandProjects\golang\internal\presenter" />
+      <recent name="C:\Users\Lenovo\GolandProjects\golang\app" />
+      <recent name="C:\Users\Lenovo\GolandProjects\golang" />
+      <recent name="C:\Users\Lenovo\GolandProjects\golang\internal" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build golang">
     <configuration name="go build golang" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="golang" />
@@ -140,6 +161,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
