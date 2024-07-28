@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2024_19_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2024_19_48__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2024_19_48__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_27_07_2024_19_48__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/service_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service_test.go" afterDir="false" />
-    </list>
+    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,41 +53,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build golang.executor": "Run",
-    "Go Test.TestNewProducer in golang/internal/producer.executor": "Run",
-    "Go Test.TestNewService in golang/internal/service.executor": "Run",
-    "Go Test.TestPresenter_present in golang/internal/presenter.executor": "Run",
-    "Go Test.TestProducer_Produce in golang/internal/producer.executor": "Run",
-    "Go Test.TestService_Run in golang/internal/service.executor": "Run",
-    "Go Test.TestService_SpamMasker in golang/internal/service.executor": "Run",
-    "Go Test.TestSpamMasker in golang.executor": "Coverage",
-    "Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor": "Run",
-    "Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
-    "Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor": "Run",
-    "Go Test.TestSpamMasker_ in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
-    "Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor": "Run",
-    "Go Test.go test golang.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "#4 on dev",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/home/GolandProjects/golang/internal/producer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestNewProducer in golang/internal/producer.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestNewService in golang/internal/service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestPresenter_present in golang/internal/presenter.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestProducer_Produce in golang/internal/producer.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestService_Run in golang/internal/service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestService_SpamMasker in golang/internal/service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker in golang.executor&quot;: &quot;Coverage&quot;,
+    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_ in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.go test golang.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on dev&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/home/GolandProjects/golang/internal/producer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\GolandProjects\golang\internal\service" />

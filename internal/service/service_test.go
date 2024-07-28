@@ -43,19 +43,15 @@ func TestNewService(t *testing.T) {
 func TestService_SpamMasker(t *testing.T) {
 	ctrl := gomock.NewController(t)
 	defer ctrl.Finish()
-	type fields struct {
-		prod *mock.Mockproducer
-		pres *mock.Mockpresenter
-	}
 	tests := []struct {
 		name    string
-		fields  fields
+		fields  *Service
 		message string
 		want    string
 	}{
 		{
 			name: "TestService_SpamMasker",
-			fields: fields{
+			fields: &Service{
 				prod: mock.NewMockproducer(ctrl),
 				pres: mock.NewMockpresenter(ctrl),
 			},
@@ -65,11 +61,8 @@ func TestService_SpamMasker(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			s := &Service{
-				prod: tt.fields.prod,
-				pres: tt.fields.pres,
-			}
-			if got := s.SpamMasker(tt.message); got != tt.want {
+
+			if got := tt.fields.SpamMasker(tt.message); got != tt.want {
 				t.Errorf("SpamMasker() = %v, want %v", got, tt.want)
 			}
 		})
