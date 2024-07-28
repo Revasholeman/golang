@@ -1,9 +1,11 @@
 package service
 
+//go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
 type producer interface {
 	Produce() ([]string, error)
 }
 
+//go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
 type presenter interface {
 	Present([]string) error
 }

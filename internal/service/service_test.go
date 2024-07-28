@@ -1,21 +1,35 @@
 package service
 
 import (
+	"github.com/golang/mock/gomock"
+	mock "golang/internal/mock/service"
 	"reflect"
 	"testing"
 )
 
 func TestNewService(t *testing.T) {
+	ctrl := gomock.NewController(t)
+	defer ctrl.Finish()
 	type args struct {
-		prod producer
-		pres presenter
+		prod *mock.Mockproducer
+		pres *mock.Mockpresenter
 	}
 	tests := []struct {
 		name string
 		args args
 		want *Service
 	}{
-		// TODO: Add test cases.
+		{
+			name: "TestNewService",
+			args: args{
+				prod: mock.NewMockproducer(ctrl),
+				pres: mock.NewMockpresenter(ctrl),
+			},
+			want: &Service{
+				prod: mock.NewMockproducer(ctrl),
+				pres: mock.NewMockpresenter(ctrl),
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -26,55 +40,78 @@ func TestNewService(t *testing.T) {
 	}
 }
 
-func TestService_Run(t *testing.T) {
-	type fields struct {
-		prod producer
-		pres presenter
-	}
+func TestService_SpamMasker(t *testing.T) {
+	ctrl := gomock.NewController(t)
+	defer ctrl.Finish()
 	tests := []struct {
 		name    string
-		fields  fields
-		wantErr bool
+		fields  *Service
+		message string
+		want    string
 	}{
-		// TODO: Add test cases.
+		{
+			name: "TestService_SpamMasker",
+			fields: &Service{
+				prod: mock.NewMockproducer(ctrl),
+				pres: mock.NewMockpresenter(ctrl),
+			},
+			message: "http://123",
+			want:    "http://***",
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			s := &Service{
-				prod: tt.fields.prod,
-				pres: tt.fields.pres,
-			}
-			if err := s.Run(); (err != nil) != tt.wantErr {
-				t.Errorf("Service.Run() error = %v, wantErr %v", err, tt.wantErr)
+
+			if got := tt.fields.SpamMasker(tt.message); got != tt.want {
+				t.Errorf("SpamMasker() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-func TestService_SpamMasker(t *testing.T) {
+func TestService_Run(t *testing.T) {
+	ctrl := gomock.NewController(t)
+	defer ctrl.Finish()
+
 	type fields struct {
-		prod producer
-		pres presenter
-	}
-	type args struct {
-		message string
+		prod *mock.Mockproducer
+		pres *mock.Mockpresenter
 	}
 	tests := []struct {
-		name   string
-		fields fields
-		args   args
-		want   string
+		name             string
+		fields           fields
+		expectedFiles    []string
+		expectedRunError error
 	}{
-		// TODO: Add test cases.
+		{
+			name: "Successful Run",
+			fields: fields{
+				prod: mock.NewMockproducer(ctrl),
+				pres: mock.NewMockpresenter(ctrl),
+			},
+			expectedFiles:    []string{"input.txt", "output.txt"},
+			expectedRunError: nil,
+		},
 	}
+
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
+			tt.fields.prod.EXPECT().
+				Produce().
+				Return(tt.expectedFiles, nil)
+
+			tt.fields.pres.EXPECT().
+				Present(gomock.Any()).
+				Return(nil)
+
 			s := &Service{
 				prod: tt.fields.prod,
 				pres: tt.fields.pres,
 			}
-			if got := s.SpamMasker(tt.args.message); got != tt.want {
-				t.Errorf("Service.SpamMasker() = %v, want %v", got, tt.want)
+
+			err := s.Run()
+			if err != tt.expectedRunError {
+				t.Fatalf("Expected no error, got %v", err)
 			}
 		})
 	}

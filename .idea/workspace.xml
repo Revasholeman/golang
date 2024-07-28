@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/presenter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/producer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service.go" afterDir="false" />
-    </list>
+    <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,8 +13,20 @@
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,7 +55,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;Go Build.go build golang.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestNewProducer in golang/internal/producer.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestNewService in golang/internal/service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestPresenter_present in golang/internal/presenter.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestProducer_Produce in golang/internal/producer.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestService_Run in golang/internal/service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestService_SpamMasker in golang/internal/service.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.TestSpamMasker in golang.executor&quot;: &quot;Coverage&quot;,
     &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
@@ -69,16 +79,19 @@
     &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#3 on dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on dev&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/home&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/home/GolandProjects/golang/internal/producer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lenovo\GolandProjects\golang\internal\service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\home\GolandProjects\golang\internal\producer" />
       <recent name="C:\Users\home\GolandProjects\golang\internal\presenter" />
@@ -87,66 +100,74 @@
       <recent name="C:\Users\Lenovo\GolandProjects\golang\internal" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build golang">
-    <configuration name="go build golang" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestService_Run in golang/internal/service">
+    <configuration name="TestNewProducer in golang/internal/producer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/internal/producer" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/spamMasker.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestSpamMasker in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="golang" />
+      <package value="golang/internal/producer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSpamMasker\E$" />
+      <pattern value="^\QTestNewProducer\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSpamMasker/http:/hehe.HAHA in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPresenter_present in golang/internal/presenter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/internal/presenter" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang" />
+      <package value="golang/internal/presenter" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSpamMasker\E$/^\Qhttp:\E$/^\Qhehe.HAHA\E$" />
+      <pattern value="^\QTestPresenter_present\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestSpamMasker/http:/hehe.HAHA_123 in golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestProducer_Produce in golang/internal/producer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/internal/producer" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang" />
+      <package value="golang/internal/producer" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestSpamMasker\E$/^\Qhttp:\E$/^\Qhehe.HAHA_123\E$" />
+      <pattern value="^\QTestProducer_Produce\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go test golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestService_Run in golang/internal/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/internal/service" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="golang" />
+      <package value="golang/internal/service" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
+      <pattern value="^\QTestService_Run\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestService_SpamMasker in golang/internal/service" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$/internal/service" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="golang/internal/service" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestService_SpamMasker\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build golang" />
-        <item itemvalue="Go Test.TestSpamMasker in golang" />
-        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA in golang" />
-        <item itemvalue="Go Test.go test golang" />
-        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang" />
+        <item itemvalue="Go Test.TestService_Run in golang/internal/service" />
+        <item itemvalue="Go Test.TestProducer_Produce in golang/internal/producer" />
+        <item itemvalue="Go Test.TestPresenter_present in golang/internal/presenter" />
+        <item itemvalue="Go Test.TestNewProducer in golang/internal/producer" />
+        <item itemvalue="Go Test.TestService_SpamMasker in golang/internal/service" />
       </list>
     </recent_temporary>
   </component>

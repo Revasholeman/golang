@@ -1,0 +1,181 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"ALL\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8cd09f76-e327-4e01-81cc-e103578abe54\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/input.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/input.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/app/main.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/main.go\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/internal/service/presenter.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/internal/presenter/presenter.go\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/internal/service/presenter_test.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/internal/presenter/presenter_test.go\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/internal/service/producer.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/internal/producer/producer.go\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/internal/service/producer_test.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/internal/producer/producer_test.go\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/internal/service/service.go\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/internal/service/service.go\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CoverageOptionsProvider\">\r\n    <option name=\"myAddOrReplace\" value=\"0\" />\r\n  </component>\r\n  <component name=\"GOROOT\" url=\"file://$PROJECT_DIR$/../../../../Program Files/Go\" />\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Revasholeman&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;git@github.com:Revasholeman/golang.git&quot;,\r\n    &quot;accountId&quot;: &quot;e7074b6a-31b6-4613-a5b1-7d8b91fdbd22&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2jSR0wgZhcNEMcZGiV8yPUa0xIQ\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Go Build.go build golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker in golang.executor&quot;: &quot;Coverage&quot;,\r\n    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker_ in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;Go Test.go test golang.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;#3 on dev&quot;,\r\n    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,\r\n    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/home&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\home\\GolandProjects\\golang\\internal\\producer\" />\r\n      <recent name=\"C:\\Users\\home\\GolandProjects\\golang\\internal\\presenter\" />\r\n      <recent name=\"C:\\Users\\Lenovo\\GolandProjects\\golang\\app\" />\r\n      <recent name=\"C:\\Users\\Lenovo\\GolandProjects\\golang\" />\r\n      <recent name=\"C:\\Users\\Lenovo\\GolandProjects\\golang\\internal\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Go Build.go build golang\">\r\n    <configuration name=\"go build golang\" type=\"GoApplicationRunConfiguration\" factoryName=\"Go Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"golang\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"golang\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$/spamMasker.go\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"TestSpamMasker in golang\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"golang\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"golang\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <framework value=\"gotest\" />\r\n      <pattern value=\"^\\QTestSpamMasker\\E$\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"TestSpamMasker/http:/hehe.HAHA in golang\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"golang\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"golang\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <framework value=\"gotest\" />\r\n      <pattern value=\"^\\QTestSpamMasker\\E$/^\\Qhttp:\\E$/^\\Qhehe.HAHA\\E$\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"TestSpamMasker/http:/hehe.HAHA_123 in golang\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"golang\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"golang\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <framework value=\"gotest\" />\r\n      <pattern value=\"^\\QTestSpamMasker\\E$/^\\Qhttp:\\E$/^\\Qhehe.HAHA_123\\E$\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"go test golang\" type=\"GoTestRunConfiguration\" factoryName=\"Go Test\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"golang\" />\r\n      <working_directory value=\"$PROJECT_DIR$\" />\r\n      <kind value=\"PACKAGE\" />\r\n      <package value=\"golang\" />\r\n      <directory value=\"$PROJECT_DIR$\" />\r\n      <filePath value=\"$PROJECT_DIR$\" />\r\n      <framework value=\"gotest\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Go Build.go build golang\" />\r\n        <item itemvalue=\"Go Test.TestSpamMasker in golang\" />\r\n        <item itemvalue=\"Go Test.TestSpamMasker/http:/hehe.HAHA in golang\" />\r\n        <item itemvalue=\"Go Test.go test golang\" />\r\n        <item itemvalue=\"Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-gosdk-33c477a475b1-e0158606a674-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-241.18034.61\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-GO-241.18034.61\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VgoProject\">\r\n    <settings-migrated>true</settings-migrated>\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/golang$TestSpamMasker_in_golang.out\" NAME=\"TestSpamMasker in golang Coverage Results\" MODIFIED=\"1721384840801\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"GoCoverage\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -6,13 +6,13 @@
+   <component name="ChangeListManager">
+     <list default="true" id="8cd09f76-e327-4e01-81cc-e103578abe54" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/input.txt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/internal/service/presenter.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/internal/service/presenter_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/presenter/presenter_test.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/internal/service/producer.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer.go" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/internal/service/producer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/producer/producer_test.go" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main_test.go" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/internal/presenter/presenter_test.go" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/internal/producer/producer_test.go" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/internal/service/service.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/service.go" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/internal/service/service_test.go" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -24,6 +24,11 @@
+   </component>
+   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+@@ -50,34 +55,34 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Go Build.go build golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker in golang.executor&quot;: &quot;Coverage&quot;,
+-    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker_ in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor&quot;: &quot;Run&quot;,
+-    &quot;Go Test.go test golang.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;#3 on dev&quot;,
+-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/home&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Go Build.go build golang.executor": "Run",
++    "Go Test.TestSpamMasker in golang.executor": "Coverage",
++    "Go Test.TestSpamMasker/123_http:/hehe.HAHA in golang.executor": "Run",
++    "Go Test.TestSpamMasker/123_http:/hehe.HAHA_123 in golang.executor": "Run",
++    "Go Test.TestSpamMasker/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
++    "Go Test.TestSpamMasker/http:/hehe.HAHA in golang.executor": "Run",
++    "Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang.executor": "Run",
++    "Go Test.TestSpamMasker_ in golang.executor": "Run",
++    "Go Test.TestSpamMasker_/123_http:/hehe.HAHA in golang.executor": "Run",
++    "Go Test.TestSpamMasker_/1_http:/hehe123.HAHA_1 in golang.executor": "Run",
++    "Go Test.TestSpamMasker_/http:/hehe.HAHA in golang.executor": "Run",
++    "Go Test.go test golang.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.go.formatter.settings.were.checked": "true",
++    "RunOnceActivity.go.migrated.go.modules.settings": "true",
++    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
++    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
++    "git-widget-placeholder": "dev",
++    "go.import.settings.migrated": "true",
++    "go.sdk.automatically.set": "true",
++    "last_opened_file_path": "C:/Users/home",
++    "node.js.detected.package.eslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\home\GolandProjects\golang\internal\producer" />
+@@ -142,11 +147,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Go Build.go build golang" />
+         <item itemvalue="Go Test.TestSpamMasker in golang" />
++        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang" />
+         <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA in golang" />
+         <item itemvalue="Go Test.go test golang" />
+-        <item itemvalue="Go Test.TestSpamMasker/http:/hehe.HAHA_123 in golang" />
++        <item itemvalue="Go Build.go build golang" />
+       </list>
+     </recent_temporary>
+   </component>
+Index: internal/service/service.go
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package service\r\n\r\ntype producer interface {\r\n\tProduce() ([]string, error)\r\n}\r\n\r\ntype presenter interface {\r\n\tPresent([]string) error\r\n}\r\n\r\ntype Service struct {\r\n\tprod producer\r\n\tpres presenter\r\n}\r\n\r\nfunc NewService(prod producer, pres presenter) *Service {\r\n\treturn &Service{pres: pres, prod: prod}\r\n}\r\n\r\nfunc (s *Service) Run() error {\r\n\tfile, err := s.prod.Produce()\r\n\tif err != nil {\r\n\t\treturn err\r\n\t}\r\n\r\n\tvar spamMasked []string\r\n\r\n\tfor _, text := range file {\r\n\t\tspamMasked = append(spamMasked, s.SpamMasker(text))\r\n\t}\r\n\r\n\terr = s.pres.Present(spamMasked)\r\n\tif err != nil {\r\n\t\treturn err\r\n\t}\r\n\r\n\treturn nil\r\n}\r\n\r\nfunc (s *Service) SpamMasker(message string) string {\r\n\thttp := [7]rune{'h', 't', 't', 'p', ':', '/', '/'}\r\n\tcount := 0\r\n\tresult := make([]rune, 0, len(message))\r\n\tfor _, w := range message {\r\n\t\tswitch {\r\n\t\tcase w == ' ':\r\n\t\t\tresult = append(result, w)\r\n\t\t\tcount = 0\r\n\t\tcase count == 7 && w != ' ':\r\n\t\t\tresult = append(result, '*')\r\n\t\tcase w == http[count]:\r\n\t\t\tresult = append(result, w)\r\n\t\t\tcount++\r\n\t\tdefault:\r\n\t\t\tresult = append(result, w)\r\n\t\t}\r\n\t}\r\n\treturn string(result)\r\n}\r\n
+===================================================================
+diff --git a/internal/service/service.go b/internal/service/service.go
+--- a/internal/service/service.go	
++++ b/internal/service/service.go	
+@@ -1,9 +1,11 @@
+ package service
+ 
++//go:generate mockgen -source=service.go -destination=../mock/service/service.go -package=mock
+ type producer interface {
+ 	Produce() ([]string, error)
+ }
+ 
++//go:generate mockgen -source=service.go -destination=../mock/service/service.go -package=mock
+ type presenter interface {
+ 	Present([]string) error
+ }
+Index: go.sum
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>github.com/cweill/gotests v1.6.0 h1:KJx+/p4EweijYzqPb4Y/8umDCip1Cv6hEVyOx0mE9W8=\r\ngithub.com/cweill/gotests v1.6.0/go.mod h1:CaRYbxQZGQOxXDvM9l0XJVV2Tjb2E5H53vq+reR2GrA=\r\ngolang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=\r\ngolang.org/x/mod v0.19.0 h1:fEdghXQSo20giMthA7cd28ZC+jts4amQ3YMXiP5oMQ8=\r\ngolang.org/x/mod v0.19.0/go.mod h1:hTbmBsO62+eylJbnUtE2MGJUyE7QWk4xUqPFrRgJ+7c=\r\ngolang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=\r\ngolang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=\r\ngolang.org/x/sync v0.7.0 h1:YsImfSBoP9QPYL0xyKJPq0gcaJdG3rInoqxTWbfQu9M=\r\ngolang.org/x/sync v0.7.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=\r\ngolang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=\r\ngolang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=\r\ngolang.org/x/tools v0.0.0-20191109212701-97ad0ed33101/go.mod h1:b+2E5dAYhXwXZwtnZ6UAqBI28+e2cm9otk0dWdXHAEo=\r\ngolang.org/x/tools v0.23.0 h1:SGsXPZ+2l4JsgaCKkx+FQ9YZ5XEtA1GZYuoDjenLjvg=\r\ngolang.org/x/tools v0.23.0/go.mod h1:pnu6ufv6vQkll6szChhK3C3L/ruaIv5eBeztNG8wtsI=\r\ngolang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=\r\n
+===================================================================
+diff --git a/go.sum b/go.sum
+--- a/go.sum	
++++ b/go.sum	
+@@ -1,15 +1,25 @@
+-github.com/cweill/gotests v1.6.0 h1:KJx+/p4EweijYzqPb4Y/8umDCip1Cv6hEVyOx0mE9W8=
+-github.com/cweill/gotests v1.6.0/go.mod h1:CaRYbxQZGQOxXDvM9l0XJVV2Tjb2E5H53vq+reR2GrA=
++github.com/golang/mock v1.6.0 h1:ErTB+efbowRARo13NNdxyJji2egdxLGQhRaY+DUumQc=
++github.com/golang/mock v1.6.0/go.mod h1:p6yTPP+5HYm5mzsMV8JkE6ZKdX+/wYM6Hr+LicevLPs=
++github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
+ golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
+-golang.org/x/mod v0.19.0 h1:fEdghXQSo20giMthA7cd28ZC+jts4amQ3YMXiP5oMQ8=
+-golang.org/x/mod v0.19.0/go.mod h1:hTbmBsO62+eylJbnUtE2MGJUyE7QWk4xUqPFrRgJ+7c=
++golang.org/x/crypto v0.0.0-20191011191535-87dc89f01550/go.mod h1:yigFU9vqHzYiE8UmvKecakEJjdnWj3jj499lnFckfCI=
++golang.org/x/mod v0.4.2/go.mod h1:s0Qsj1ACt9ePp/hMypM3fl4fZqREWJwdYDEqhRiZZUA=
++golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
+ golang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
++golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4/go.mod h1:p54w0d4576C0XHj96bSt6lcn1PtDYWL6XObtHCRCNQM=
+ golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
+-golang.org/x/sync v0.7.0 h1:YsImfSBoP9QPYL0xyKJPq0gcaJdG3rInoqxTWbfQu9M=
+-golang.org/x/sync v0.7.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=
++golang.org/x/sync v0.0.0-20210220032951-036812b2e83c/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
+ golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
++golang.org/x/sys v0.0.0-20190412213103-97732733099d/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
++golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
++golang.org/x/sys v0.0.0-20210330210617-4fbd30eecc44/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
++golang.org/x/sys v0.0.0-20210510120138-977fb7262007/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
++golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
+ golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
+-golang.org/x/tools v0.0.0-20191109212701-97ad0ed33101/go.mod h1:b+2E5dAYhXwXZwtnZ6UAqBI28+e2cm9otk0dWdXHAEo=
+-golang.org/x/tools v0.23.0 h1:SGsXPZ+2l4JsgaCKkx+FQ9YZ5XEtA1GZYuoDjenLjvg=
+-golang.org/x/tools v0.23.0/go.mod h1:pnu6ufv6vQkll6szChhK3C3L/ruaIv5eBeztNG8wtsI=
++golang.org/x/text v0.3.3/go.mod h1:5Zoc/QRtKVWzQhOtBMvqHzDpF6irO9z98xDceosuGiQ=
++golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
++golang.org/x/tools v0.0.0-20191119224855-298f0cb1881e/go.mod h1:b+2E5dAYhXwXZwtnZ6UAqBI28+e2cm9otk0dWdXHAEo=
++golang.org/x/tools v0.1.1/go.mod h1:o0xws9oXOQQZyjljx8fwUC0k7L1pTE6eaCbjGeHmOkk=
+ golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
++golang.org/x/xerrors v0.0.0-20191011141410-1b5146add898/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
++golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
