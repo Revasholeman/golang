@@ -1,5 +1,9 @@
 package service
 
+import (
+	"sync"
+)
+
 //go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
 type producer interface {
 	Produce() ([]string, error)
@@ -21,14 +25,47 @@ func NewService(prod producer, pres presenter) *Service {
 
 func (s *Service) Run() error {
 	file, err := s.prod.Produce()
+	wg := sync.WaitGroup{}
 	if err != nil {
 		return err
 	}
 
+	limit := 10
+
+	fanIn := make(chan string)  // пишем результат SpamMasker
+	fanOut := make(chan string) // извлекаем результат из канала в spamMasked
+
+	semaphore := make(chan struct{}, limit) // ограничивает кол-во горутин по limit
+
 	var spamMasked []string
 
-	for _, text := range file {
-		spamMasked = append(spamMasked, s.SpamMasker(text))
+	for i := 0; i < limit; i++ {
+		wg.Add(1)
+
+		go func() {
+			defer wg.Done()
+			for _, text := range file {
+				result := s.SpamMasker(text)
+				fanIn <- result
+				<-semaphore
+			}
+		}()
+	}
+	go func() {
+		for text := range fanIn {
+			semaphore <- struct{}{}
+			fanOut <- text
+		}
+		close(fanIn)
+	}()
+
+	go func() {
+		wg.Wait()
+		close(fanOut)
+	}()
+
+	for val := range fanOut {
+		spamMasked = append(spamMasked, val)
 	}
 
 	err = s.pres.Present(spamMasked)
