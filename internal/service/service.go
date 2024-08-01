@@ -31,42 +31,31 @@ func (s *Service) Run() error {
 		return err
 	}
 
-	limit := 10
-
-	fanIn := make(chan string)
-	fanOut := make(chan string)
-
-	semaphore := make(chan struct{}, limit)
+	fanIn := make(chan string, len(file))
+	fanOut := make(chan string, len(file))
 
 	var spamMasked []string
 
-	wg.Add(1)
+	wg.Add(len(file))
 	go func() {
-		defer wg.Done()
 		for _, text := range file {
 			fanIn <- text
-			<-semaphore
 		}
 	}()
 
 	go func() {
 		for text := range fanIn {
-			wg.Add(1)
-			semaphore <- struct{}{}
 			fanOut <- s.SpamMasker(text)
-			<-semaphore
 		}
 		close(fanIn)
 	}()
 
 	go func() {
-		wg.Wait()
-		close(fanOut)
+		for val := range fanOut {
+			spamMasked = append(spamMasked, val)
+			wg.Done()
+		}
 	}()
-
-	for val := range fanOut {
-		spamMasked = append(spamMasked, val)
-	}
 
 	err = s.pres.Present(spamMasked)
 	if err != nil {
@@ -77,7 +66,6 @@ func (s *Service) Run() error {
 }
 
 func (s *Service) SpamMasker(message string) string {
-	defer s.wg.Done()
 	http := [7]rune{'h', 't', 't', 'p', ':', '/', '/'}
 	count := 0
 	result := make([]rune, 0, len(message))
