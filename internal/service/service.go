@@ -2,7 +2,6 @@ package service
 
 import (
 	"sync"
-	"time"
 )
 
 //go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
@@ -52,6 +51,7 @@ func (s *Service) Run() error {
 
 	go func() {
 		for text := range fanIn {
+			wg.Add(1)
 			semaphore <- struct{}{}
 			fanOut <- s.SpamMasker(text)
 			<-semaphore
@@ -61,7 +61,6 @@ func (s *Service) Run() error {
 
 	go func() {
 		wg.Wait()
-		time.Sleep(100 * time.Microsecond)
 		close(fanOut)
 	}()
 
@@ -78,6 +77,7 @@ func (s *Service) Run() error {
 }
 
 func (s *Service) SpamMasker(message string) string {
+	defer s.wg.Done()
 	http := [7]rune{'h', 't', 't', 'p', ':', '/', '/'}
 	count := 0
 	result := make([]rune, 0, len(message))
