@@ -26,7 +26,7 @@ func (p *Presenter) Present(text []string) error {
 	}()
 
 	for _, line := range text {
-		_, err := file.WriteString(line + "\n")
+		_, err := file.WriteString(line + " ")
 		if err != nil {
 			return err
 		}

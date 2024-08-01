@@ -1,5 +1,10 @@
 package service
 
+import (
+	"strings"
+	"sync"
+)
+
 //go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
 type producer interface {
 	Produce() ([]string, error)
@@ -13,23 +18,50 @@ type presenter interface {
 type Service struct {
 	prod producer
 	pres presenter
+	wg   sync.WaitGroup
 }
 
 func NewService(prod producer, pres presenter) *Service {
-	return &Service{pres: pres, prod: prod}
+	return &Service{pres: pres, prod: prod, wg: sync.WaitGroup{}}
 }
 
 func (s *Service) Run() error {
 	file, err := s.prod.Produce()
+	wg := &s.wg
 	if err != nil {
 		return err
 	}
+	joinText := strings.Join(file, " ")
+	words := strings.Fields(joinText)
+
+	fanIn := make(chan string, len(file))
+	fanOut := make(chan string, len(file))
 
 	var spamMasked []string
 
-	for _, text := range file {
-		spamMasked = append(spamMasked, s.SpamMasker(text))
-	}
+	wg.Add(len(words))
+	go func() {
+		for _, text := range words {
+			fanIn <- text
+		}
+		close(fanIn)
+	}()
+
+	go func() {
+		for text := range fanIn {
+			fanOut <- s.SpamMasker(text)
+		}
+		close(fanOut)
+	}()
+
+	go func() {
+		for val := range fanOut {
+			spamMasked = append(spamMasked, val)
+			wg.Done()
+		}
+	}()
+
+	wg.Wait()
 
 	err = s.pres.Present(spamMasked)
 	if err != nil {
