@@ -2,6 +2,7 @@ package service
 
 import (
 	"sync"
+	"time"
 )
 
 //go:generate mockgen -source=service.go -destination=../internal/mock/service.go -package=mock
@@ -17,50 +18,50 @@ type presenter interface {
 type Service struct {
 	prod producer
 	pres presenter
+	wg   sync.WaitGroup
 }
 
 func NewService(prod producer, pres presenter) *Service {
-	return &Service{pres: pres, prod: prod}
+	return &Service{pres: pres, prod: prod, wg: sync.WaitGroup{}}
 }
 
 func (s *Service) Run() error {
 	file, err := s.prod.Produce()
-	wg := sync.WaitGroup{}
+	wg := &s.wg
 	if err != nil {
 		return err
 	}
 
 	limit := 10
 
-	fanIn := make(chan string)  // пишем результат SpamMasker
-	fanOut := make(chan string) // извлекаем результат из канала в spamMasked
+	fanIn := make(chan string)
+	fanOut := make(chan string)
 
-	semaphore := make(chan struct{}, limit) // ограничивает кол-во горутин по limit
+	semaphore := make(chan struct{}, limit)
 
 	var spamMasked []string
 
-	for i := 0; i < limit; i++ {
-		wg.Add(1)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for _, text := range file {
+			fanIn <- text
+			<-semaphore
+		}
+	}()
 
-		go func() {
-			defer wg.Done()
-			for _, text := range file {
-				result := s.SpamMasker(text)
-				fanIn <- result
-				<-semaphore
-			}
-		}()
-	}
 	go func() {
 		for text := range fanIn {
 			semaphore <- struct{}{}
-			fanOut <- text
+			fanOut <- s.SpamMasker(text)
+			<-semaphore
 		}
 		close(fanIn)
 	}()
 
 	go func() {
 		wg.Wait()
+		time.Sleep(100 * time.Microsecond)
 		close(fanOut)
 	}()
 
