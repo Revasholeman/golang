@@ -1,6 +1,7 @@
 package service
 
 import (
+	"strings"
 	"sync"
 )
 
@@ -30,24 +31,27 @@ func (s *Service) Run() error {
 	if err != nil {
 		return err
 	}
+	joinText := strings.Join(file, " ")
+	words := strings.Fields(joinText)
 
 	fanIn := make(chan string, len(file))
 	fanOut := make(chan string, len(file))
 
 	var spamMasked []string
 
-	wg.Add(len(file))
+	wg.Add(len(words))
 	go func() {
-		for _, text := range file {
+		for _, text := range words {
 			fanIn <- text
 		}
+		close(fanIn)
 	}()
 
 	go func() {
 		for text := range fanIn {
 			fanOut <- s.SpamMasker(text)
 		}
-		close(fanIn)
+		close(fanOut)
 	}()
 
 	go func() {
@@ -56,6 +60,8 @@ func (s *Service) Run() error {
 			wg.Done()
 		}
 	}()
+
+	wg.Wait()
 
 	err = s.pres.Present(spamMasked)
 	if err != nil {
